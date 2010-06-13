@@ -22,7 +22,7 @@
 #ifndef IEXECUTEBROWSERPLUGIN_H
 #define IEXECUTEBROWSERPLUGIN_H
 
-#include <interfaces/iextension.h>
+#include <QObject>
 #include <QtCore/QString>
 
 namespace KDevelop
@@ -48,7 +48,6 @@ public:
     virtual QString browserAppConfigTypeId() const = 0;
 };
 
-KDEV_DECLARE_EXTENSION_INTERFACE( IExecuteBrowserPlugin, "org.kdevelop.IExecuteBrowserPlugin" )
 Q_DECLARE_INTERFACE( IExecuteBrowserPlugin, "org.kdevelop.IExecuteBrowserPlugin" )
 
 #endif
