@@ -45,6 +45,8 @@ public:
     virtual ~IExecuteBrowserPlugin() {}
 
     virtual KUrl url( KDevelop::ILaunchConfiguration*, QString& ) const = 0;
+    /// @return Empty string when system default should be used.
+    virtual QString browser( KDevelop::ILaunchConfiguration* ) const = 0;
     virtual QString browserAppConfigTypeId() const = 0;
 };
 

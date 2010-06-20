@@ -57,6 +57,7 @@ void BrowserAppConfigPage::loadFromConfiguration(const KConfigGroup& cfg, KDevel
     server->setText( cfg.readEntry( ExecuteBrowserPlugin::serverEntry, "" ) );
     path->setText( cfg.readEntry( ExecuteBrowserPlugin::pathEntry, "" ) );
     arguments->setText( cfg.readEntry( ExecuteBrowserPlugin::argumentsEntry, "" ) );
+    browser->setText( cfg.readEntry( ExecuteBrowserPlugin::browserEntry, "" ) );
     blockSignals( b );
 }
 
@@ -69,6 +70,7 @@ BrowserAppConfigPage::BrowserAppConfigPage( QWidget* parent )
     connect( server, SIGNAL(textEdited(const QString&)), SIGNAL(changed()) );
     connect( path, SIGNAL(textEdited(const QString&)), SIGNAL(changed()) );
     connect( arguments, SIGNAL(textEdited(const QString&)), SIGNAL(changed()) );
+    connect( browser, SIGNAL(textEdited(const QString&)), SIGNAL(changed()) );
 }
 
 void BrowserAppConfigPage::saveToConfiguration( KConfigGroup cfg, KDevelop::IProject* project ) const
@@ -77,6 +79,7 @@ void BrowserAppConfigPage::saveToConfiguration( KConfigGroup cfg, KDevelop::IPro
     cfg.writeEntry( ExecuteBrowserPlugin::serverEntry, server->text() );
     cfg.writeEntry( ExecuteBrowserPlugin::pathEntry, path->text() );
     cfg.writeEntry( ExecuteBrowserPlugin::argumentsEntry, arguments->text() );
+    cfg.writeEntry( ExecuteBrowserPlugin::browserEntry, browser->text() );
 }
 
 QString BrowserAppConfigPage::title() const

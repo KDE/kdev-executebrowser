@@ -44,10 +44,12 @@ class ExecuteBrowserPlugin : public KDevelop::IPlugin, public IExecuteBrowserPlu
     static QString serverEntry;
     static QString pathEntry;
     static QString argumentsEntry;
+    static QString browserEntry;
     
     virtual void unload();
     
     KUrl url( KDevelop::ILaunchConfiguration*, QString& err ) const;
+    virtual QString browser(KDevelop::ILaunchConfiguration* ) const;
     QString browserAppConfigTypeId() const;
 };
 

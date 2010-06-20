@@ -41,6 +41,7 @@ public:
 
 private:
     KUrl m_url;
+    QString m_browser;
 };
 
 #endif

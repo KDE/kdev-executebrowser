@@ -50,6 +50,7 @@ QString ExecuteBrowserPlugin::_browserAppConfigTypeId = "Browser Application";
 QString ExecuteBrowserPlugin::serverEntry = "Server";
 QString ExecuteBrowserPlugin::pathEntry = "Path";
 QString ExecuteBrowserPlugin::argumentsEntry = "Arguments";
+QString ExecuteBrowserPlugin::browserEntry = "Browser";
 
 using namespace KDevelop;
 
@@ -104,6 +105,11 @@ KUrl ExecuteBrowserPlugin::url( KDevelop::ILaunchConfiguration* cfg, QString& er
         }
     }
     return url;
+}
+
+QString ExecuteBrowserPlugin::browser( ILaunchConfiguration* cfg ) const
+{
+    return cfg->config().readEntry( ExecuteBrowserPlugin::browserEntry, "" );
 }
 
 QString ExecuteBrowserPlugin::browserAppConfigTypeId() const

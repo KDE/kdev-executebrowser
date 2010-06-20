@@ -26,6 +26,7 @@
 #include <kmessagebox.h>
 #include <kconfiggroup.h>
 #include <kdebug.h>
+#include <kprocess.h>
 
 #include <interfaces/ilaunchconfiguration.h>
 #include <outputview/outputmodel.h>
@@ -57,6 +58,7 @@ BrowserAppJob::BrowserAppJob(QObject* parent, KDevelop::ILaunchConfiguration* cf
         setErrorText( err );
         return;
     }
+    m_browser = iface->browser(cfg);
 
     setTitle(cfg->name());
 }
@@ -65,12 +67,14 @@ BrowserAppJob::BrowserAppJob(QObject* parent, KDevelop::ILaunchConfiguration* cf
 void BrowserAppJob::start()
 {
     kDebug() << "launching?" << m_url;
-    if (!QDesktopServices::openUrl(m_url)) {
-        kWarning() << "openUrl failed, something went wrong when creating the job";
+    if (m_browser.isEmpty()) {
+        if (!QDesktopServices::openUrl(m_url)) {
+            kWarning() << "openUrl failed, something went wrong when creating the job";
+        }
     } else {
-//         startOutput();
-//         model()->appendLine( i18n("Starting: %1", proc->program().join(" ") ) );
-//         proc->start();
+      KProcess proc(this);
+      proc.setProgram(QStringList() << m_browser << m_url.pathOrUrl());
+      proc.execute();
     }
     emitResult();
 }
