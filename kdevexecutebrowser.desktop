@@ -16,6 +16,7 @@ Comment[x-test]=xxThis plugin allows running browser.xx
 Comment[zh_CN]=此插件可以运行浏览器。
 Name=Execute Browser
 Name[da]=Kør browser
+Name[de]=Browser ausführen
 Name[en_GB]=Execute Browser
 Name[es]=Ejecutar navegador
 Name[et]=Brauseri käivitamine
