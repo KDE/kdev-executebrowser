@@ -11,6 +11,7 @@ Comment[sv]=Insticksprogrammet gör det möjligt att köra en webbläsare.
 Comment[uk]=За допомогою цього додатка можна запускати інструмент перегляду.
 Comment[x-test]=xxThis plugin allows running browser.xx
 Name=Execute Browser
+Name[de]=Webbrowser ausführen
 Name[es]=Ejecutar navegador
 Name[nl]=Browser uitvoeren
 Name[pt]=Executar um Navegador
