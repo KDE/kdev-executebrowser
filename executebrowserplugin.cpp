@@ -46,6 +46,8 @@
 #include <kshell.h>
 #include <util/kdevstringhandler.h>
 
+#include "version.h"
+
 QString ExecuteBrowserPlugin::_browserAppConfigTypeId = "Browser Application";
 QString ExecuteBrowserPlugin::serverEntry = "Server";
 QString ExecuteBrowserPlugin::pathEntry = "Path";
@@ -55,7 +57,7 @@ QString ExecuteBrowserPlugin::browserEntry = "Browser";
 using namespace KDevelop;
 
 K_PLUGIN_FACTORY(KDevExecuteFactory, registerPlugin<ExecuteBrowserPlugin>(); )
-K_EXPORT_PLUGIN(KDevExecuteFactory(KAboutData("kdevexecutebrowser", "kdevexecutebrowser", ki18n("Execute browser support"), "1.0 Beta 1", ki18n("Allows running of browsers"), KAboutData::License_GPL)
+K_EXPORT_PLUGIN(KDevExecuteFactory(KAboutData("kdevexecutebrowser", "kdevexecutebrowser", ki18n("Execute browser support"), KDEVEXECUTEBROWSER_VERSION_STR, ki18n("Allows running of browsers"), KAboutData::License_GPL)
     .addAuthor(ki18n("Niko Sams"), ki18n("Author"), "niko.sams@gmail.com", "http://nikosams.blogspot.com")
 ))
 
