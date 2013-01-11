@@ -1,18 +1,18 @@
 project(executebrowser)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${executebrowser_SOURCE_DIR}/cmake)
 
-set(KDEVUPLOAD_VERSION_MAJOR 1)
-set(KDEVUPLOAD_VERSION_MINOR 4)
-set(KDEVUPLOAD_VERSION_PATCH 60)
+find_package(KDE4 REQUIRED)
+find_package(KDevPlatform 1.4.60 REQUIRED)
+
+set(VERSION_MAJOR 1)
+set(VERSION_MINOR 4)
+set(VERSION_PATCH 60)
 
 configure_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/version.h.cmake"
   "${CMAKE_CURRENT_BINARY_DIR}/version.h"
   @ONLY
 )
-
-find_package(KDE4 REQUIRED)
-find_package(KDevPlatform 1.4.60 REQUIRED)
 
 remove_definitions( -DKDE_DEFAULT_DEBUG_AREA=24000 )
 add_definitions( -DKDE_DEFAULT_DEBUG_AREA=9515 )
