@@ -2,7 +2,7 @@
 Type=Service
 Exec=blubb
 Comment=This plugin allows running browser.
-Comment[bs]=Ovaj dodatak omogućava pokretanje pregledača
+Comment[bs]=Ovaj dodatak omogućava pokretanje pregledača.
 Comment[ca]=Aquest connector permet executar el navegador.
 Comment[ca@valencia]=Este connector permet executar el navegador.
 Comment[de]=Diese Modul erlaubt das Ausführen von Browsern.
