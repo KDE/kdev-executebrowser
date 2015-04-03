@@ -22,6 +22,7 @@ Comment[tr]=Bu eklenti tarayıcı çalıştırılmasını sağlar.
 Comment[uk]=За допомогою цього додатка можна запускати інструмент перегляду.
 Comment[x-test]=xxThis plugin allows running browser.xx
 Name=Execute Browser
+Name[ast]=Executar restolador
 Name[bs]=Pokreni pregledač
 Name[ca]=Executa el navegador
 Name[ca@valencia]=Executa el navegador
