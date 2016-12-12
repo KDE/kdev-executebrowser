@@ -36,8 +36,8 @@ class BrowserAppConfigPage : public KDevelop::LaunchConfigurationPage, Ui::Brows
 Q_OBJECT
 public:
     BrowserAppConfigPage( QWidget* parent );
-    void loadFromConfiguration( const KConfigGroup& cfg, KDevelop::IProject* project = 0 );
-    void saveToConfiguration( KConfigGroup cfg, KDevelop::IProject* project = 0 ) const;
+    void loadFromConfiguration( const KConfigGroup& cfg, KDevelop::IProject* project = nullptr );
+    void saveToConfiguration( KConfigGroup cfg, KDevelop::IProject* project = nullptr ) const;
     QString title() const;
     QIcon icon() const;
 };

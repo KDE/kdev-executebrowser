@@ -117,7 +117,7 @@ KJob* BrowserAppLauncher::start(const QString& launchMode, KDevelop::ILaunchConf
     Q_ASSERT(cfg);
     if( !cfg )
     {
-        return 0;
+        return nullptr;
     }
     if( launchMode == "execute" )
     {
@@ -125,7 +125,7 @@ KJob* BrowserAppLauncher::start(const QString& launchMode, KDevelop::ILaunchConf
         
     }
     qWarning() << "Unknown launch mode " << launchMode << "for config:" << cfg->name();
-    return 0;
+    return nullptr;
 }
 
 QStringList BrowserAppLauncher::supportedModes() const
