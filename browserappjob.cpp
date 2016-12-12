@@ -21,11 +21,12 @@
 #include "browserappjob.h"
 
 #include <QDesktopServices>
+#include <QUrl>
+#include <QDebug>
 
 #include <klocale.h>
 #include <kmessagebox.h>
 #include <kconfiggroup.h>
-#include <kdebug.h>
 #include <kprocess.h>
 
 #include <interfaces/ilaunchconfiguration.h>
@@ -44,9 +45,9 @@
 BrowserAppJob::BrowserAppJob(QObject* parent, KDevelop::ILaunchConfiguration* cfg)
     : KDevelop::OutputJob( parent )
 {
-    kDebug() << "creating browser app job";
+    qDebug() << "creating browser app job";
     setCapabilities(NoCapabilities);
-    
+
     IExecuteBrowserPlugin* iface = KDevelop::ICore::self()->pluginController()->pluginForExtension("org.kdevelop.IExecuteBrowserPlugin")->extension<IExecuteBrowserPlugin>();
     Q_ASSERT(iface);
 
@@ -66,15 +67,16 @@ BrowserAppJob::BrowserAppJob(QObject* parent, KDevelop::ILaunchConfiguration* cf
 
 void BrowserAppJob::start()
 {
-    kDebug() << "launching?" << m_url;
+    qDebug() << "launching?" << m_url;
     if (m_browser.isEmpty()) {
-        if (!QDesktopServices::openUrl(m_url)) {
-            kWarning() << "openUrl failed, something went wrong when creating the job";
+		if (!QDesktopServices::openUrl(m_url)) {
+            qWarning() << "openUrl failed, something went wrong when creating the job";
         }
     } else {
-      KProcess proc(this);
-      proc.setProgram(QStringList() << m_browser << m_url.pathOrUrl());
-      proc.execute();
+	KProcess proc(this);
+	proc << m_browser << m_url.url();
+
+	proc.startDetached();
     }
     emitResult();
 }

@@ -23,15 +23,18 @@
 #include "executebrowserplugin.h"
 
 #include <QApplication>
+#include <QUrl>
+#include <QString>
+#include <QDebug>
 
 #include <klocale.h>
-#include <kpluginfactory.h>
+#include <KPluginFactory>
 #include <kpluginloader.h>
-#include <kdebug.h>
 #include <kjob.h>
 #include <kparts/mainwindow.h>
 #include <kmessagebox.h>
 #include <kaboutdata.h>
+#include <KConfigGroup>
 
 #include <interfaces/icore.h>
 #include <interfaces/iruncontroller.h>
@@ -56,18 +59,16 @@ QString ExecuteBrowserPlugin::browserEntry = "Browser";
 
 using namespace KDevelop;
 
-K_PLUGIN_FACTORY(KDevExecuteFactory, registerPlugin<ExecuteBrowserPlugin>(); )
-K_EXPORT_PLUGIN(KDevExecuteFactory(KAboutData("kdevexecutebrowser", "kdevexecutebrowser", ki18n("Execute browser support"), VERSION_STR, ki18n("Allows running of browsers"), KAboutData::License_GPL)
-    .addAuthor(ki18n("Niko Sams"), ki18n("Author"), "niko.sams@gmail.com", "http://nikosams.blogspot.com")
-))
+//KPluginFactory stuff to load the plugin dynamically at runtime
+K_PLUGIN_FACTORY_WITH_JSON(KDevExecuteFactory, "kdevexecutebrowser.json", registerPlugin<ExecuteBrowserPlugin>();)
 
 ExecuteBrowserPlugin::ExecuteBrowserPlugin(QObject *parent, const QVariantList&)
-    : KDevelop::IPlugin(KDevExecuteFactory::componentData(), parent)
+: KDevelop::IPlugin("kdevexecutebrowser", parent)
 {
     KDEV_USE_EXTENSION_INTERFACE( IExecuteBrowserPlugin )
     BrowserAppConfigType* t = new BrowserAppConfigType();
     t->addLauncher( new BrowserAppLauncher() );
-    kDebug() << "adding script launch config";
+    qDebug() << "adding script launch config";
     core()->runController()->addConfigurationType( t );
 }
 
@@ -80,9 +81,9 @@ void ExecuteBrowserPlugin::unload()
 {
 }
 
-KUrl ExecuteBrowserPlugin::url( KDevelop::ILaunchConfiguration* cfg, QString& err_ ) const
+QUrl ExecuteBrowserPlugin::url( KDevelop::ILaunchConfiguration* cfg, QString& err_ ) const
 {
-    KUrl url;
+    QUrl url;
 
     if( !cfg )
     {
@@ -94,7 +95,7 @@ KUrl ExecuteBrowserPlugin::url( KDevelop::ILaunchConfiguration* cfg, QString& er
     if( host.isEmpty() )
     {
         err_ = i18n("No valid server specified");
-        kWarning() << "Launch Configuration:" << cfg->name() << "no valid server specified";
+        qWarning() << "Launch Configuration:" << cfg->name() << "no valid server specified";
         return url;
     }
     url.setScheme("http");

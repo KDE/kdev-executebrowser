@@ -19,8 +19,11 @@
 */
 #include "browserappconfig.h"
 
+#include <QIcon>
+#include <QDebug>
+
+#include <kconfiggroup.h>
 #include <klocale.h>
-#include <kdebug.h>
 #include <kicon.h>
 
 #include <interfaces/icore.h>
@@ -44,9 +47,9 @@
 #include <util/kdevstringhandler.h>
 #include <util/environmentgrouplist.h>
 
-KIcon BrowserAppConfigPage::icon() const
+QIcon BrowserAppConfigPage::icon() const
 {
-    return KIcon("system-run");
+    return QIcon::fromTheme("system-run");
 }
 
 void BrowserAppConfigPage::loadFromConfiguration(const KConfigGroup& cfg, KDevelop::IProject* project )
@@ -123,7 +126,7 @@ KJob* BrowserAppLauncher::start(const QString& launchMode, KDevelop::ILaunchConf
         return new BrowserAppJob( KDevelop::ICore::self()->runController(), cfg );
         
     }
-    kWarning() << "Unknown launch mode " << launchMode << "for config:" << cfg->name();
+    qWarning() << "Unknown launch mode " << launchMode << "for config:" << cfg->name();
     return 0;
 }
 
@@ -162,12 +165,12 @@ QString BrowserAppConfigType::id() const
     return ExecuteBrowserPlugin::_browserAppConfigTypeId;
 }
 
-KIcon BrowserAppConfigType::icon() const
+QIcon BrowserAppConfigType::icon() const
 {
-    return KIcon("system-run");
+    return QIcon::fromTheme("system-run");
 }
 
-bool BrowserAppConfigType::canLaunch(const KUrl& /*file*/) const
+bool BrowserAppConfigType::canLaunch(const QUrl& /*file*/) const
 {
     return false;
 }

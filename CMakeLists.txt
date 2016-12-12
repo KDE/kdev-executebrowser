@@ -1,14 +1,21 @@
 project(executebrowser)
-cmake_minimum_required(VERSION 2.8.9)
+
+cmake_minimum_required(VERSION 2.8.12)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${executebrowser_SOURCE_DIR}/cmake)
 
-find_package(KDE4 REQUIRED)
-find_package(KDevPlatform 1.5.60 REQUIRED)
+find_package(ECM REQUIRED)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
+include(KDECompilerSettings NO_POLICY_SCOPE)
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+find_package(KF5 REQUIRED I18n ItemModels ConfigWidgets)
 
-set(VERSION_MAJOR 1)
-set(VERSION_MINOR 5)
-set(VERSION_PATCH 60)
+find_package(KDevPlatform REQUIRED 5.0.0)
+
+set(VERSION_MAJOR 5)
+set(VERSION_MINOR 0)
+set(VERSION_PATCH 0)
 
 configure_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/version.h.cmake"
@@ -25,7 +32,7 @@ endif()
 
 include_directories(
     ${KDEVPLATFORM_INCLUDE_DIR}
-    ${KDE4_INCLUDES}
+
     ${CMAKE_CURRENT_BINARY_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
@@ -42,16 +49,16 @@ set(kdevexecutebrowser_PART_SRCS
     browserappjob.cpp
 )
 
-kde4_add_ui_files( kdevexecutebrowser_PART_SRCS ${kdevexecutebrowser_PART_UIS} )
-kde4_add_plugin(kdevexecutebrowser ${kdevexecutebrowser_PART_SRCS}  )
-target_link_libraries(kdevexecutebrowser 
-    ${KDE4_KDEUI_LIBS} 
-    ${KDEVPLATFORM_INTERFACES_LIBRARIES} 
-    ${KDEVPLATFORM_OUTPUTVIEW_LIBRARIES})
+ki18n_wrap_ui(kdevexecutebrowser_PART_SRCS ${kdevexecutebrowser_PART_UIS})
 
-install(TARGETS kdevexecutebrowser DESTINATION ${PLUGIN_INSTALL_DIR})
+kdevplatform_add_plugin(kdevexecutebrowser JSON kdevexecutebrowser.json SOURCES ${kdevexecutebrowser_PART_SRCS})
+target_link_libraries(kdevexecutebrowser
+    KDev::Interfaces
+    KDev::Util
+    KDev::Project
+    KDev::OutputView
+)
 
-
-########### install files ###############
 install(FILES iexecutebrowserplugin.h DESTINATION ${INCLUDE_INSTALL_DIR}/kdevexecutebrowser COMPONENT Devel)
-install(FILES kdevexecutebrowser.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)

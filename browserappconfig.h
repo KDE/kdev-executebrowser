@@ -21,6 +21,9 @@
 #ifndef BROWSERAPPCONFIGTYPE_H
 #define BROWSERAPPCONFIGTYPE_H
 
+#include <QUrl>
+#include <QIcon>
+
 #include <interfaces/launchconfigurationtype.h>
 #include <interfaces/launchconfigurationpage.h>
 #include <interfaces/ilauncher.h>
@@ -36,7 +39,7 @@ public:
     void loadFromConfiguration( const KConfigGroup& cfg, KDevelop::IProject* project = 0 );
     void saveToConfiguration( KConfigGroup cfg, KDevelop::IProject* project = 0 ) const;
     QString title() const;
-    KIcon icon() const;
+    QIcon icon() const;
 };
 
 class BrowserAppLauncher : public KDevelop::ILauncher
@@ -71,8 +74,8 @@ public:
     QString id() const;
     QString name() const;
     QList<KDevelop::LaunchConfigurationPageFactory*> configPages() const;  
-    KIcon icon() const;
-    virtual bool canLaunch( const KUrl& file ) const;
+    QIcon icon() const;
+    virtual bool canLaunch( const QUrl& file ) const;
     virtual bool canLaunch(KDevelop::ProjectBaseItem* item) const;
     virtual void configureLaunchFromItem(KConfigGroup config, KDevelop::ProjectBaseItem* item) const;
     virtual void configureLaunchFromCmdLineArguments(KConfigGroup config, const QStringList& args) const;

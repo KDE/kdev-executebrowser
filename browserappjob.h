@@ -22,7 +22,7 @@
 #define BROWSERAPPJOB_H
 
 #include <QtCore/QProcess>
-#include <KUrl>
+#include <QUrl>
 #include <outputview/outputjob.h>
 
 namespace KDevelop
@@ -40,7 +40,7 @@ public:
     virtual void start();
 
 private:
-    KUrl m_url;
+    QUrl m_url;
     QString m_browser;
 };
 

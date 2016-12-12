@@ -28,7 +28,7 @@
 #include <QtCore/QProcess>
 #include "iexecutebrowserplugin.h"
 
-class KUrl;
+class QUrl;
 class KJob;
 
 class ExecuteBrowserPlugin : public KDevelop::IPlugin, public IExecuteBrowserPlugin
@@ -48,7 +48,7 @@ class ExecuteBrowserPlugin : public KDevelop::IPlugin, public IExecuteBrowserPlu
     
     virtual void unload();
     
-    KUrl url( KDevelop::ILaunchConfiguration*, QString& err ) const;
+    QUrl url( KDevelop::ILaunchConfiguration*, QString& err ) const;
     virtual QString browser(KDevelop::ILaunchConfiguration* ) const;
     QString browserAppConfigTypeId() const;
 };
