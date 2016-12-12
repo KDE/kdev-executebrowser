@@ -57,6 +57,7 @@ target_link_libraries(kdevexecutebrowser
     KDev::Util
     KDev::Project
     KDev::OutputView
+    KF5::I18n
 )
 
 install(FILES iexecutebrowserplugin.h DESTINATION ${INCLUDE_INSTALL_DIR}/kdevexecutebrowser COMPONENT Devel)

@@ -23,8 +23,6 @@
 #include <QDebug>
 
 #include <kconfiggroup.h>
-#include <klocale.h>
-#include <kicon.h>
 
 #include <interfaces/icore.h>
 #include <interfaces/iprojectcontroller.h>
@@ -190,5 +188,3 @@ void BrowserAppConfigType::configureLaunchFromCmdLineArguments(KConfigGroup /*co
                                                                const QStringList &/*args*/) const
 {
 }
-
-#include "browserappconfig.moc"

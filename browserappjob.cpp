@@ -24,7 +24,6 @@
 #include <QUrl>
 #include <QDebug>
 
-#include <klocale.h>
 #include <kmessagebox.h>
 #include <kconfiggroup.h>
 #include <kprocess.h>
@@ -80,6 +79,3 @@ void BrowserAppJob::start()
     }
     emitResult();
 }
-
-
-#include "browserappjob.moc"

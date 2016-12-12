@@ -27,7 +27,6 @@
 #include <QString>
 #include <QDebug>
 
-#include <klocale.h>
 #include <KPluginFactory>
 #include <kpluginloader.h>
 #include <kjob.h>
