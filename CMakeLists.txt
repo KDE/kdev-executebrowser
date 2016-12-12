@@ -6,22 +6,14 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${executebrowser_SOURCE_DIR}/cmake)
 
 find_package(ECM REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
+
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
+
 find_package(KF5 REQUIRED I18n ItemModels ConfigWidgets)
 
 find_package(KDevPlatform REQUIRED 5.0.0)
-
-set(VERSION_MAJOR 5)
-set(VERSION_MINOR 0)
-set(VERSION_PATCH 0)
-
-configure_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/version.h.cmake"
-  "${CMAKE_CURRENT_BINARY_DIR}/version.h"
-  @ONLY
-)
 
 remove_definitions( -DKDE_DEFAULT_DEBUG_AREA=24000 )
 add_definitions( -DKDE_DEFAULT_DEBUG_AREA=9515 )
