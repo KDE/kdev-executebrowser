@@ -37,7 +37,8 @@ class BrowserAppJob : public KDevelop::OutputJob
 Q_OBJECT
 public:
     BrowserAppJob( QObject* parent, KDevelop::ILaunchConfiguration* cfg );
-    virtual void start();
+
+    void start() override;
 
 private:
     QUrl m_url;

@@ -38,7 +38,7 @@ class ExecuteBrowserPlugin : public KDevelop::IPlugin, public IExecuteBrowserPlu
 
   public:
     ExecuteBrowserPlugin(QObject *parent, const QVariantList & = QVariantList() );
-    virtual ~ExecuteBrowserPlugin();
+    ~ExecuteBrowserPlugin() override;
 
     static QString _browserAppConfigTypeId;
     static QString serverEntry;
@@ -46,10 +46,10 @@ class ExecuteBrowserPlugin : public KDevelop::IPlugin, public IExecuteBrowserPlu
     static QString argumentsEntry;
     static QString browserEntry;
     
-    virtual void unload();
+    void unload() override;
     
     QUrl url( KDevelop::ILaunchConfiguration*, QString& err ) const;
-    virtual QString browser(KDevelop::ILaunchConfiguration* ) const;
+    QString browser(KDevelop::ILaunchConfiguration* ) const override;
     QString browserAppConfigTypeId() const;
 };
 
