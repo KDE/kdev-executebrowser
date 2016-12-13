@@ -48,8 +48,6 @@
 #include <kshell.h>
 #include <util/kdevstringhandler.h>
 
-#include "version.h"
-
 QString ExecuteBrowserPlugin::_browserAppConfigTypeId = "Browser Application";
 QString ExecuteBrowserPlugin::serverEntry = "Server";
 QString ExecuteBrowserPlugin::pathEntry = "Path";

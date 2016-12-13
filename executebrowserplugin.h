@@ -48,9 +48,9 @@ class ExecuteBrowserPlugin : public KDevelop::IPlugin, public IExecuteBrowserPlu
     
     void unload() override;
     
-    QUrl url( KDevelop::ILaunchConfiguration*, QString& err ) const;
+    QUrl url( KDevelop::ILaunchConfiguration*, QString& err ) const override;
     QString browser(KDevelop::ILaunchConfiguration* ) const override;
-    QString browserAppConfigTypeId() const;
+    QString browserAppConfigTypeId() const override;
 };
 
 #endif // EXECUTEBROWSERPLUGIN_H
