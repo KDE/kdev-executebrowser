@@ -41,6 +41,8 @@ public:
     void saveToConfiguration( KConfigGroup cfg, KDevelop::IProject* project = nullptr ) const override;
     QString title() const override;
     QIcon icon() const override;
+private:
+    void selectDialog();
 };
 
 class BrowserAppLauncher : public KDevelop::ILauncher

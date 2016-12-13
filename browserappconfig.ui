@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
+<ui version="4.1">
  <class>BrowserAppPage</class>
  <widget class="QWidget" name="BrowserAppPage">
   <property name="geometry">
@@ -79,6 +79,19 @@
         </property>
        </widget>
       </item>
+	  <item row="4" column="4">
+	   <widget class="QPushButton" name="selectBrowserButton">
+	    <property name="sizePolicy">
+		 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+		  <horstretch>0</horstretch>
+		  <verstretch>0</verstretch>
+		 </sizepolicy>
+		</property>
+		<property name="toolTip">
+		 <string>Select a browser</string>
+		</property>
+	   </widget>
+	  </item>
      </layout>
     </widget>
    </item>

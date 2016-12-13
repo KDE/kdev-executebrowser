@@ -22,7 +22,8 @@
 #include <QIcon>
 #include <QDebug>
 
-#include <kconfiggroup.h>
+#include <KConfigGroup>
+#include <KOpenWithDialog>
 
 #include <interfaces/icore.h>
 #include <interfaces/iprojectcontroller.h>
@@ -65,13 +66,16 @@ void BrowserAppConfigPage::loadFromConfiguration(const KConfigGroup& cfg, KDevel
 BrowserAppConfigPage::BrowserAppConfigPage( QWidget* parent )
     : LaunchConfigurationPage( parent )
 {
-    setupUi(this);    
+    setupUi(this);
+
+    selectBrowserButton->setIcon(QIcon::fromTheme("system-run"));
 
     //connect signals to changed signal
-    connect( server, SIGNAL(textEdited(const QString&)), SIGNAL(changed()) );
-    connect( path, SIGNAL(textEdited(const QString&)), SIGNAL(changed()) );
-    connect( arguments, SIGNAL(textEdited(const QString&)), SIGNAL(changed()) );
-    connect( browser, SIGNAL(textEdited(const QString&)), SIGNAL(changed()) );
+    connect(server, &KLineEdit::textEdited, this, &BrowserAppConfigPage::changed); 
+    connect(path, &KLineEdit::textEdited, this, &BrowserAppConfigPage::changed); 
+    connect(arguments, &KLineEdit::textEdited, this, &BrowserAppConfigPage::changed); 
+    connect(browser, &KLineEdit::textEdited, this, &BrowserAppConfigPage::changed); 
+    connect(selectBrowserButton, &QPushButton::pressed, this, &BrowserAppConfigPage::selectDialog); 
 }
 
 void BrowserAppConfigPage::saveToConfiguration( KConfigGroup cfg, KDevelop::IProject* project ) const
@@ -86,6 +90,18 @@ void BrowserAppConfigPage::saveToConfiguration( KConfigGroup cfg, KDevelop::IPro
 QString BrowserAppConfigPage::title() const
 {
     return i18n("Configure Browser Application");
+}
+
+void BrowserAppConfigPage::selectDialog()
+{
+    KOpenWithDialog *dialog = new KOpenWithDialog();
+    dialog->setAttribute(Qt::WA_DeleteOnClose);
+    dialog->hideNoCloseOnExit();
+    dialog->hideRunInTerminal();
+    if(dialog->exec()) {
+        browser->setText(dialog->text().replace(" %u", "", Qt::CaseSensitivity::CaseInsensitive));
+        emit changed();
+    }
 }
 
 QList< KDevelop::LaunchConfigurationPageFactory* > BrowserAppLauncher::configPages() const
