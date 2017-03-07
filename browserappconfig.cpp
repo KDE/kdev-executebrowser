@@ -44,7 +44,6 @@
 
 #include "executebrowserplugin.h"
 #include <util/kdevstringhandler.h>
-#include <util/environmentgrouplist.h>
 
 QIcon BrowserAppConfigPage::icon() const
 {

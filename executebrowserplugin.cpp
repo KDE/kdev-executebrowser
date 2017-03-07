@@ -40,7 +40,6 @@
 #include <interfaces/ilaunchconfiguration.h>
 #include <interfaces/iprojectcontroller.h>
 #include <interfaces/iuicontroller.h>
-#include <util/environmentgrouplist.h>
 
 #include "browserappconfig.h"
 #include <project/projectmodel.h>
@@ -62,7 +61,6 @@ K_PLUGIN_FACTORY_WITH_JSON(KDevExecuteFactory, "kdevexecutebrowser.json", regist
 ExecuteBrowserPlugin::ExecuteBrowserPlugin(QObject *parent, const QVariantList&)
 : KDevelop::IPlugin("kdevexecutebrowser", parent)
 {
-    KDEV_USE_EXTENSION_INTERFACE( IExecuteBrowserPlugin )
     BrowserAppConfigType* t = new BrowserAppConfigType();
     t->addLauncher( new BrowserAppLauncher() );
     qDebug() << "adding script launch config";

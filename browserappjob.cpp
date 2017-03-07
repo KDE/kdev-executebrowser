@@ -31,7 +31,6 @@
 #include <interfaces/ilaunchconfiguration.h>
 #include <outputview/outputmodel.h>
 #include <util/processlinemaker.h>
-#include <util/environmentgrouplist.h>
 
 #include <kshell.h>
 #include <interfaces/icore.h>
