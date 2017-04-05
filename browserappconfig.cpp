@@ -41,6 +41,7 @@
 #include <util/executecompositejob.h>
 #include <kparts/mainwindow.h>
 #include <interfaces/iplugincontroller.h>
+#include <interfaces/iruncontroller.h>
 
 #include "executebrowserplugin.h"
 #include <util/kdevstringhandler.h>
