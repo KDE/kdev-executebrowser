@@ -38,12 +38,13 @@
 #include <interfaces/iplugincontroller.h>
 #include <project/projectmodel.h>
 
+#include "debug.h"
 #include "iexecutebrowserplugin.h"
 
 BrowserAppJob::BrowserAppJob(QObject* parent, KDevelop::ILaunchConfiguration* cfg)
     : KDevelop::OutputJob( parent )
 {
-    qDebug() << "creating browser app job";
+    qCDebug(KDEV_EXECUTEBROWSER) << "creating browser app job";
     setCapabilities(NoCapabilities);
 
     IExecuteBrowserPlugin* iface = KDevelop::ICore::self()->pluginController()->pluginForExtension("org.kdevelop.IExecuteBrowserPlugin")->extension<IExecuteBrowserPlugin>();
@@ -65,7 +66,7 @@ BrowserAppJob::BrowserAppJob(QObject* parent, KDevelop::ILaunchConfiguration* cf
 
 void BrowserAppJob::start()
 {
-    qDebug() << "launching?" << m_url;
+    qCDebug(KDEV_EXECUTEBROWSER) << "launching?" << m_url;
     if (m_browser.isEmpty()) {
 		if (!QDesktopServices::openUrl(m_url)) {
             qWarning() << "openUrl failed, something went wrong when creating the job";

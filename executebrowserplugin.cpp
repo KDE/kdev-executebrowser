@@ -41,11 +41,15 @@
 #include <interfaces/iprojectcontroller.h>
 #include <interfaces/iuicontroller.h>
 
+#include "debug.h"
 #include "browserappconfig.h"
+
 #include <project/projectmodel.h>
 #include <project/builderjob.h>
 #include <kshell.h>
 #include <util/kdevstringhandler.h>
+
+Q_LOGGING_CATEGORY(KDEV_EXECUTEBROWSER, "kdevelop.plugins.executebrowser")
 
 QString ExecuteBrowserPlugin::_browserAppConfigTypeId = "Browser Application";
 QString ExecuteBrowserPlugin::serverEntry = "Server";
@@ -63,7 +67,7 @@ ExecuteBrowserPlugin::ExecuteBrowserPlugin(QObject *parent, const QVariantList&)
 {
     BrowserAppConfigType* t = new BrowserAppConfigType();
     t->addLauncher( new BrowserAppLauncher() );
-    qDebug() << "adding script launch config";
+    qCDebug(KDEV_EXECUTEBROWSER) << "adding script launch config";
     core()->runController()->addConfigurationType( t );
 }
 
