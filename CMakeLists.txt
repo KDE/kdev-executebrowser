@@ -15,9 +15,6 @@ find_package(KF5 REQUIRED I18n ItemModels ConfigWidgets)
 
 find_package(KDevPlatform REQUIRED 5.0.0)
 
-remove_definitions( -DKDE_DEFAULT_DEBUG_AREA=24000 )
-add_definitions( -DKDE_DEFAULT_DEBUG_AREA=9515 )
-
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "Intel")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 endif()
