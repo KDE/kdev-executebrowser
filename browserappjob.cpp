@@ -21,23 +21,14 @@
 #include "browserappjob.h"
 
 #include <QDesktopServices>
-#include <QUrl>
 
-#include <kmessagebox.h>
-#include <kconfiggroup.h>
-#include <kprocess.h>
+#include <KProcess>
 
 #include <interfaces/ilaunchconfiguration.h>
-#include <outputview/outputmodel.h>
-#include <util/processlinemaker.h>
-
-#include <kshell.h>
 #include <interfaces/icore.h>
-#include <interfaces/iuicontroller.h>
 #include <interfaces/iplugincontroller.h>
-#include <project/projectmodel.h>
 
-#include "debug.h"
+#include <debug.h>
 #include "iexecutebrowserplugin.h"
 
 BrowserAppJob::BrowserAppJob(QObject* parent, KDevelop::ILaunchConfiguration* cfg)

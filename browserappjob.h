@@ -21,15 +21,12 @@
 #ifndef BROWSERAPPJOB_H
 #define BROWSERAPPJOB_H
 
-#include <QtCore/QProcess>
 #include <QUrl>
 #include <outputview/outputjob.h>
 
 namespace KDevelop
 {
 class ILaunchConfiguration;
-class ProcessLineMaker;
-class OutputModel;
 }
 
 class BrowserAppJob : public KDevelop::OutputJob

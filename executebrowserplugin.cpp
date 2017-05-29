@@ -22,31 +22,17 @@
 
 #include "executebrowserplugin.h"
 
-#include <QApplication>
 #include <QUrl>
-#include <QString>
 
 #include <KPluginFactory>
-#include <kpluginloader.h>
-#include <kjob.h>
-#include <kparts/mainwindow.h>
-#include <kmessagebox.h>
-#include <kaboutdata.h>
 #include <KConfigGroup>
 
 #include <interfaces/icore.h>
 #include <interfaces/iruncontroller.h>
 #include <interfaces/ilaunchconfiguration.h>
-#include <interfaces/iprojectcontroller.h>
-#include <interfaces/iuicontroller.h>
 
-#include "debug.h"
+#include <debug.h>
 #include "browserappconfig.h"
-
-#include <project/projectmodel.h>
-#include <project/builderjob.h>
-#include <kshell.h>
-#include <util/kdevstringhandler.h>
 
 QString ExecuteBrowserPlugin::_browserAppConfigTypeId = "Browser Application";
 QString ExecuteBrowserPlugin::serverEntry = "Server";

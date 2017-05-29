@@ -21,15 +21,12 @@
 #ifndef BROWSERAPPCONFIGTYPE_H
 #define BROWSERAPPCONFIGTYPE_H
 
-#include <QUrl>
-#include <QIcon>
-
 #include <interfaces/launchconfigurationtype.h>
 #include <interfaces/launchconfigurationpage.h>
 #include <interfaces/ilauncher.h>
-#include <interfaces/ilaunchmode.h>
 
 #include "ui_browserappconfig.h"
+
 
 class BrowserAppConfigPage : public KDevelop::LaunchConfigurationPage, Ui::BrowserAppPage
 {

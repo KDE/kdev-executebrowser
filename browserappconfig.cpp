@@ -25,26 +25,12 @@
 #include <KOpenWithDialog>
 
 #include <interfaces/icore.h>
-#include <interfaces/iprojectcontroller.h>
 #include <interfaces/ilaunchconfiguration.h>
-
-#include <project/projectmodel.h>
-
-#include "browserappjob.h"
-#include <interfaces/iproject.h>
-#include <project/interfaces/ibuildsystemmanager.h>
-#include <project/interfaces/iprojectbuilder.h>
-#include <project/builderjob.h>
-#include <kmessagebox.h>
-#include <interfaces/iuicontroller.h>
-#include <util/executecompositejob.h>
-#include <kparts/mainwindow.h>
-#include <interfaces/iplugincontroller.h>
 #include <interfaces/iruncontroller.h>
 
 #include <debug.h>
+#include "browserappjob.h"
 #include "executebrowserplugin.h"
-#include <util/kdevstringhandler.h>
 
 QIcon BrowserAppConfigPage::icon() const
 {

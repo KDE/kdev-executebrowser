@@ -24,8 +24,7 @@
 #define EXECUTEBROWSERPLUGIN_H
 
 #include <interfaces/iplugin.h>
-#include <QtCore/QVariant>
-#include <QtCore/QProcess>
+#include <QVariant>
 #include "iexecutebrowserplugin.h"
 
 class QUrl;

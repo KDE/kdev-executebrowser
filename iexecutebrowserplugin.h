@@ -23,16 +23,14 @@
 #define IEXECUTEBROWSERPLUGIN_H
 
 #include <QObject>
-#include <QtCore/QString>
 
 namespace KDevelop
 {
 class ILaunchConfiguration;
 }
 
-class KJob;
 class QUrl;
-class QStringList;
+class QString;
 
 /**
 @author Andreas Pakulat
