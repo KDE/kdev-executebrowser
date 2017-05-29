@@ -25,7 +25,6 @@
 #include <QApplication>
 #include <QUrl>
 #include <QString>
-#include <QDebug>
 
 #include <KPluginFactory>
 #include <kpluginloader.h>
@@ -92,7 +91,7 @@ QUrl ExecuteBrowserPlugin::url( KDevelop::ILaunchConfiguration* cfg, QString& er
     if( host.isEmpty() )
     {
         err_ = i18n("No valid server specified");
-        qWarning() << "Launch Configuration:" << cfg->name() << "no valid server specified";
+        qCWarning(KDEV_EXECUTEBROWSER) << "Launch Configuration:" << cfg->name() << "no valid server specified";
         return url;
     }
     url.setScheme("http");

@@ -22,7 +22,6 @@
 
 #include <QDesktopServices>
 #include <QUrl>
-#include <QDebug>
 
 #include <kmessagebox.h>
 #include <kconfiggroup.h>
@@ -69,7 +68,7 @@ void BrowserAppJob::start()
     qCDebug(KDEV_EXECUTEBROWSER) << "launching?" << m_url;
     if (m_browser.isEmpty()) {
 		if (!QDesktopServices::openUrl(m_url)) {
-            qWarning() << "openUrl failed, something went wrong when creating the job";
+            qCWarning(KDEV_EXECUTEBROWSER) << "openUrl failed, something went wrong when creating the job";
         }
     } else {
 	KProcess proc(this);

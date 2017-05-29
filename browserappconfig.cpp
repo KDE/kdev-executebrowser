@@ -20,7 +20,6 @@
 #include "browserappconfig.h"
 
 #include <QIcon>
-#include <QDebug>
 
 #include <KConfigGroup>
 #include <KOpenWithDialog>
@@ -43,6 +42,7 @@
 #include <interfaces/iplugincontroller.h>
 #include <interfaces/iruncontroller.h>
 
+#include <debug.h>
 #include "executebrowserplugin.h"
 #include <util/kdevstringhandler.h>
 
@@ -140,7 +140,7 @@ KJob* BrowserAppLauncher::start(const QString& launchMode, KDevelop::ILaunchConf
         return new BrowserAppJob( KDevelop::ICore::self()->runController(), cfg );
         
     }
-    qWarning() << "Unknown launch mode " << launchMode << "for config:" << cfg->name();
+    qCWarning(KDEV_EXECUTEBROWSER) << "Unknown launch mode " << launchMode << "for config:" << cfg->name();
     return nullptr;
 }
 
