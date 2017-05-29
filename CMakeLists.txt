@@ -52,6 +52,6 @@ target_link_libraries(kdevexecutebrowser
     KF5::I18n
 )
 
-install(FILES iexecutebrowserplugin.h DESTINATION ${INCLUDE_INSTALL_DIR}/kdevexecutebrowser COMPONENT Devel)
+install(FILES iexecutebrowserplugin.h DESTINATION ${KDE_INSTALL_INCLUDEDIR}/kdevexecutebrowser COMPONENT Devel)
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
