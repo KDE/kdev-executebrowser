@@ -49,4 +49,7 @@ target_link_libraries(kdevexecutebrowser
 
 install(FILES iexecutebrowserplugin.h DESTINATION ${KDE_INSTALL_INCLUDEDIR}/kdevexecutebrowser COMPONENT Devel)
 
+# kdebugsettings file
+install(FILES kdevexecutebrowser.categories DESTINATION ${KDE_INSTALL_CONFDIR})
+
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)

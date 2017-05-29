@@ -1,0 +1,5 @@
+# KDebugSettings data file
+# Format:
+# logname<space>description
+
+kdevelop.plugins.executebrowser KDevelop plugin: executebrowser
