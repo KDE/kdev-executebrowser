@@ -16,7 +16,7 @@
      <property name="title">
       <string>URL</string>
      </property>
-     <layout class="QGridLayout" name="gridLayout">
+     <layout class="QFormLayout" name="formLayout">
       <item row="0" column="0">
        <widget class="QLabel" name="label_7">
         <property name="text">
@@ -24,37 +24,10 @@
         </property>
        </widget>
       </item>
-      <item row="3" column="2">
-       <widget class="KLineEdit" name="arguments">
-        <property name="toolTip">
-         <string>Enter arguments to give to the executable</string>
-        </property>
-        <property name="placeholderText">
-         <string>Enter arguments to give to the URL</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_3">
-        <property name="text">
-         <string>Arguments:</string>
-        </property>
-        <property name="buddy">
-         <cstring>arguments</cstring>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="2">
+      <item row="0" column="1">
        <widget class="KLineEdit" name="server">
         <property name="placeholderText">
          <string>localhost</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="KLineEdit" name="path">
-        <property name="placeholderText">
-         <string>Enter the path</string>
         </property>
        </widget>
       </item>
@@ -65,48 +38,66 @@
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
+      <item row="1" column="1">
+       <widget class="KLineEdit" name="path">
+        <property name="placeholderText">
+         <string>Enter the path</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Arguments:</string>
+        </property>
+        <property name="buddy">
+         <cstring>arguments</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="KLineEdit" name="arguments">
+        <property name="toolTip">
+         <string>Enter arguments to give to the executable</string>
+        </property>
+        <property name="placeholderText">
+         <string>Enter arguments to give to the URL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
        <widget class="QLabel" name="label">
         <property name="text">
          <string>Browser:</string>
         </property>
        </widget>
       </item>
-      <item row="4" column="2">
-       <widget class="KLineEdit" name="browser">
-        <property name="placeholderText">
-         <string>Leave empty to use system default</string>
-        </property>
-       </widget>
+      <item row="3" column="1">
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="KLineEdit" name="browser">
+          <property name="placeholderText">
+           <string>Leave empty to use system default</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+        <widget class="QPushButton" name="selectBrowserButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="toolTip">
+           <string>Select a browser</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
-	  <item row="4" column="4">
-	   <widget class="QPushButton" name="selectBrowserButton">
-	    <property name="sizePolicy">
-		 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-		  <horstretch>0</horstretch>
-		  <verstretch>0</verstretch>
-		 </sizepolicy>
-		</property>
-		<property name="toolTip">
-		 <string>Select a browser</string>
-		</property>
-	   </widget>
-	  </item>
      </layout>
     </widget>
-   </item>
-   <item>
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>40</height>
-      </size>
-     </property>
-    </spacer>
    </item>
   </layout>
  </widget>
