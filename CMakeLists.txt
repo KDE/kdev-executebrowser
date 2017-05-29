@@ -1,6 +1,6 @@
-project(executebrowser)
-
 cmake_minimum_required(VERSION 2.8.12)
+
+project(executebrowser)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${executebrowser_SOURCE_DIR}/cmake)
 
