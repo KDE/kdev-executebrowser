@@ -78,6 +78,5 @@
     },
     "X-KDevelop-Category": "Global",
     "X-KDevelop-Interfaces": ["org.kdevelop.IExecuteBrowserPlugin"],
-    "X-KDevelop-Mode": "NoGUI",
-    "X-KDevelop-Version": "17"
+    "X-KDevelop-Mode": "NoGUI"
 }
