@@ -49,8 +49,6 @@
 #include <kshell.h>
 #include <util/kdevstringhandler.h>
 
-Q_LOGGING_CATEGORY(KDEV_EXECUTEBROWSER, "kdevelop.plugins.executebrowser")
-
 QString ExecuteBrowserPlugin::_browserAppConfigTypeId = "Browser Application";
 QString ExecuteBrowserPlugin::serverEntry = "Server";
 QString ExecuteBrowserPlugin::pathEntry = "Path";

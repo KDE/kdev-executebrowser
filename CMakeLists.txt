@@ -4,12 +4,13 @@ project(executebrowser)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${executebrowser_SOURCE_DIR}/cmake)
 
-find_package(ECM REQUIRED)
+find_package(ECM "5.14.0" REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
+include(ECMQtDeclareLoggingCategory)
 
 find_package(KF5 REQUIRED I18n ItemModels ConfigWidgets)
 
@@ -19,7 +20,6 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_C
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 endif()
 
-########### next target ###############
 
 set(kdevexecutebrowser_PART_UIS
     browserappconfig.ui
@@ -29,6 +29,11 @@ set(kdevexecutebrowser_PART_SRCS
     executebrowserplugin.cpp
     browserappconfig.cpp
     browserappjob.cpp
+)
+ecm_qt_declare_logging_category(kdevexecutebrowser_PART_SRCS
+    HEADER debug.h
+    IDENTIFIER KDEV_EXECUTEBROWSER
+    CATEGORY_NAME "kdevelop.plugins.executebrowser"
 )
 
 ki18n_wrap_ui(kdevexecutebrowser_PART_SRCS ${kdevexecutebrowser_PART_UIS})
