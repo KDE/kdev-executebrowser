@@ -47,6 +47,7 @@
         "Description[tr]": "Bu eklenti tarayıcı çalıştırılmasını sağlar.",
         "Description[uk]": "За допомогою цього додатка можна запускати інструмент перегляду.",
         "Description[x-test]": "xxThis plugin allows running browser.xx",
+        "Icon": "internet-web-browser",
         "Id": "kdevexecutebrowser",
         "License": "GPL",
         "Name": "Execute Browser",
