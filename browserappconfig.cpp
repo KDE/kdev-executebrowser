@@ -81,11 +81,11 @@ QString BrowserAppConfigPage::title() const
 void BrowserAppConfigPage::selectDialog()
 {
     KOpenWithDialog *dialog = new KOpenWithDialog();
-    dialog->setAttribute(Qt::WA_DeleteOnClose);
     dialog->hideNoCloseOnExit();
     dialog->hideRunInTerminal();
     if(dialog->exec()) {
-        browser->setText(dialog->text().replace(" %u", "", Qt::CaseSensitivity::CaseInsensitive));
+        browser->setText(dialog->text().replace(QStringLiteral(" %u"), QStringLiteral(""), Qt::CaseSensitivity::CaseInsensitive));
+        dialog->deleteLater();
         emit changed();
     }
 }
