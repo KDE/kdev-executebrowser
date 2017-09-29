@@ -26,8 +26,14 @@
       </item>
       <item row="0" column="1">
        <widget class="KLineEdit" name="server">
-        <property name="placeholderText">
+        <property name="text">
          <string>localhost</string>
+        </property>
+        <property name="maxLength">
+         <number>25</number>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
