@@ -42,7 +42,7 @@ void BrowserAppConfigPage::loadFromConfiguration(const KConfigGroup& cfg, KDevel
     Q_UNUSED(project);
 
     bool b = blockSignals( true );
-    server->setText( cfg.readEntry( ExecuteBrowserPlugin::serverEntry, "" ) );
+    server->setText( cfg.readEntry( ExecuteBrowserPlugin::serverEntry, "localhost" ) );
     path->setText( cfg.readEntry( ExecuteBrowserPlugin::pathEntry, "" ) );
     arguments->setText( cfg.readEntry( ExecuteBrowserPlugin::argumentsEntry, "" ) );
     browser->setText( cfg.readEntry( ExecuteBrowserPlugin::browserEntry, "" ) );
