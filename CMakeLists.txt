@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 2.8.12)
 
 project(executebrowser)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${executebrowser_SOURCE_DIR}/cmake)
-
 find_package(ECM "5.14.0" REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
@@ -11,10 +9,15 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(ECMQtDeclareLoggingCategory)
+include(FeatureSummary)
 
 find_package(KF5 REQUIRED I18n ItemModels ConfigWidgets)
-set(KDEVPLATFORM_VERSION "5.0.0")
-find_package(KDevPlatform ${KDEVPLATFORM_VERSION} CONFIG REQUIRED)
+
+set(KDEVPLATFORM_VERSION "5.1.0")
+find_package(KDevPlatform ${KDEVPLATFORM_VERSION} CONFIG)
+set_package_properties(KDevPlatform PROPERTIES
+    TYPE REQUIRED
+)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "Intel")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
