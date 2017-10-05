@@ -23,14 +23,23 @@
     "KPlugin": {
         "Authors": [
             {
-                "Name": "Niko Sams"
+                "Name": "Niko Sams",
+                "Name[x-test]": "xxNiko Samsxx"
             }
         ],
         "Description": "This plugin allows running browser.",
+        "Description[ca]": "Aquest connector permet executar el navegador.",
+        "Description[nl]": "Deze plugin staat het uitvoeren van een browser toe.",
+        "Description[pt]": "Este 'plugin' permite executar um navegador.",
+        "Description[x-test]": "xxThis plugin allows running browser.xx",
         "Icon": "internet-web-browser",
         "Id": "kdevexecutebrowser",
         "License": "GPL",
         "Name": "Execute Browser",
+        "Name[ca]": "Executa el navegador",
+        "Name[nl]": "Browser uitvoeren",
+        "Name[pt]": "Executar um Navegador",
+        "Name[x-test]": "xxExecute Browserxx",
         "ServiceTypes": [
             "KDevelop/Plugin"
         ]
