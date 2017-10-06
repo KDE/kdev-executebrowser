@@ -28,6 +28,7 @@
             }
         ],
         "Description": "This plugin allows running browser.",
+        "Description[ca@valencia]": "Este connector permet executar el navegador.",
         "Description[ca]": "Aquest connector permet executar el navegador.",
         "Description[nl]": "Deze plugin staat het uitvoeren van een browser toe.",
         "Description[pt]": "Este 'plugin' permite executar um navegador.",
@@ -36,6 +37,7 @@
         "Id": "kdevexecutebrowser",
         "License": "GPL",
         "Name": "Execute Browser",
+        "Name[ca@valencia]": "Executa el navegador",
         "Name[ca]": "Executa el navegador",
         "Name[nl]": "Browser uitvoeren",
         "Name[pt]": "Executar um Navegador",
