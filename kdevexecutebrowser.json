@@ -32,6 +32,8 @@
         "Description[ca]": "Aquest connector permet executar el navegador.",
         "Description[nl]": "Deze plugin staat het uitvoeren van een browser toe.",
         "Description[pt]": "Este 'plugin' permite executar um navegador.",
+        "Description[sk]": "Tento plugin umožní spustiť prehliadač.",
+        "Description[uk]": "За допомогою цього додатка можна запустити програму для перегляду інтернету.",
         "Description[x-test]": "xxThis plugin allows running browser.xx",
         "Icon": "internet-web-browser",
         "Id": "kdevexecutebrowser",
@@ -41,6 +43,8 @@
         "Name[ca]": "Executa el navegador",
         "Name[nl]": "Browser uitvoeren",
         "Name[pt]": "Executar um Navegador",
+        "Name[sk]": "Spustiť prehliadač",
+        "Name[uk]": "Запустити навігатор",
         "Name[x-test]": "xxExecute Browserxx",
         "ServiceTypes": [
             "KDevelop/Plugin"
