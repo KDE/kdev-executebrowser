@@ -82,7 +82,11 @@ QUrl ExecuteBrowserPlugin::url( KDevelop::ILaunchConfiguration* cfg, QString& er
     }
     url.setScheme("http");
     url.setHost(host);
-    url.setPath(grp.readEntry( ExecuteBrowserPlugin::pathEntry, "" ));
+    auto path = grp.readEntry( ExecuteBrowserPlugin::pathEntry, "" );
+    if ( !path.startsWith("/") ) {
+        path.prepend("/");
+    }
+    url.setPath(path);
     {
         QString q = grp.readEntry( ExecuteBrowserPlugin::argumentsEntry, "" );
         if (!q.isEmpty()) {
