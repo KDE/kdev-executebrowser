@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.1">
+<ui version="4.0">
  <class>BrowserAppPage</class>
  <widget class="QWidget" name="BrowserAppPage">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>512</width>
-    <height>180</height>
+    <width>621</width>
+    <height>254</height>
    </rect>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
@@ -37,31 +37,31 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
+      <item row="2" column="0">
        <widget class="QLabel" name="label_2">
         <property name="text">
          <string>Path:</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
+      <item row="2" column="1">
        <widget class="KLineEdit" name="path">
         <property name="placeholderText">
          <string>Enter the path</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item row="3" column="0">
        <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>Arguments:</string>
+         <string>Ar&amp;guments:</string>
         </property>
         <property name="buddy">
          <cstring>arguments</cstring>
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
+      <item row="3" column="1">
        <widget class="KLineEdit" name="arguments">
         <property name="toolTip">
          <string>Enter arguments to give to the executable</string>
@@ -71,14 +71,14 @@
         </property>
        </widget>
       </item>
-      <item row="3" column="0">
+      <item row="5" column="0">
        <widget class="QLabel" name="label">
         <property name="text">
          <string>Browser:</string>
         </property>
        </widget>
       </item>
-      <item row="3" column="1">
+      <item row="5" column="1">
        <layout class="QHBoxLayout">
         <item>
          <widget class="KLineEdit" name="browser">
@@ -88,7 +88,7 @@
          </widget>
         </item>
         <item>
-        <widget class="QPushButton" name="selectBrowserButton">
+         <widget class="QPushButton" name="selectBrowserButton">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -101,6 +101,23 @@
          </widget>
         </item>
        </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Port:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="port">
+        <property name="maximum">
+         <number>65535</number>
+        </property>
+        <property name="value">
+         <number>80</number>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>

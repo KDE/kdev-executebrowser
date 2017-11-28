@@ -37,6 +37,7 @@
 QString ExecuteBrowserPlugin::_browserAppConfigTypeId = "Browser Application";
 QString ExecuteBrowserPlugin::serverEntry = "Server";
 QString ExecuteBrowserPlugin::pathEntry = "Path";
+QString ExecuteBrowserPlugin::portEntry = "Port";
 QString ExecuteBrowserPlugin::argumentsEntry = "Arguments";
 QString ExecuteBrowserPlugin::browserEntry = "Browser";
 
@@ -87,6 +88,7 @@ QUrl ExecuteBrowserPlugin::url( KDevelop::ILaunchConfiguration* cfg, QString& er
         path.prepend("/");
     }
     url.setPath(path);
+    url.setPort(grp.readEntry( ExecuteBrowserPlugin::portEntry, 80 ));
     {
         QString q = grp.readEntry( ExecuteBrowserPlugin::argumentsEntry, "" );
         if (!q.isEmpty()) {

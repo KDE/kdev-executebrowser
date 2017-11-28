@@ -42,6 +42,7 @@ class ExecuteBrowserPlugin : public KDevelop::IPlugin, public IExecuteBrowserPlu
     static QString _browserAppConfigTypeId;
     static QString serverEntry;
     static QString pathEntry;
+    static QString portEntry;
     static QString argumentsEntry;
     static QString browserEntry;
     

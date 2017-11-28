@@ -44,6 +44,7 @@ void BrowserAppConfigPage::loadFromConfiguration(const KConfigGroup& cfg, KDevel
     bool b = blockSignals( true );
     server->setText( cfg.readEntry( ExecuteBrowserPlugin::serverEntry, "localhost" ) );
     path->setText( cfg.readEntry( ExecuteBrowserPlugin::pathEntry, "" ) );
+    port->setValue( cfg.readEntry( ExecuteBrowserPlugin::portEntry, 80 ) );
     arguments->setText( cfg.readEntry( ExecuteBrowserPlugin::argumentsEntry, "" ) );
     browser->setText( cfg.readEntry( ExecuteBrowserPlugin::browserEntry, "" ) );
     blockSignals( b );
@@ -58,7 +59,8 @@ BrowserAppConfigPage::BrowserAppConfigPage( QWidget* parent )
 
     //connect signals to changed signal
     connect(server, &KLineEdit::textEdited, this, &BrowserAppConfigPage::changed); 
-    connect(path, &KLineEdit::textEdited, this, &BrowserAppConfigPage::changed); 
+    connect(path, &KLineEdit::textEdited, this, &BrowserAppConfigPage::changed);
+    connect(port, QOverload<int>::of(&QSpinBox::valueChanged), this, &BrowserAppConfigPage::changed);
     connect(arguments, &KLineEdit::textEdited, this, &BrowserAppConfigPage::changed); 
     connect(browser, &KLineEdit::textEdited, this, &BrowserAppConfigPage::changed); 
     connect(selectBrowserButton, &QPushButton::pressed, this, &BrowserAppConfigPage::selectDialog); 
@@ -69,6 +71,7 @@ void BrowserAppConfigPage::saveToConfiguration( KConfigGroup cfg, KDevelop::IPro
     Q_UNUSED( project );
     cfg.writeEntry( ExecuteBrowserPlugin::serverEntry, server->text() );
     cfg.writeEntry( ExecuteBrowserPlugin::pathEntry, path->text() );
+    cfg.writeEntry( ExecuteBrowserPlugin::portEntry, port->value() );
     cfg.writeEntry( ExecuteBrowserPlugin::argumentsEntry, arguments->text() );
     cfg.writeEntry( ExecuteBrowserPlugin::browserEntry, browser->text() );
 }
