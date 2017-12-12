@@ -1,25 +1,4 @@
 {
-    "GenericName": "Browser Execution Support",
-    "GenericName[bs]": "Podrška za pokretanje pregledača",
-    "GenericName[ca@valencia]": "Implementació per a l'execució del navegador",
-    "GenericName[ca]": "Implementació per a l'execució del navegador",
-    "GenericName[de]": "Unterstützung zur Ausführung von Browsern",
-    "GenericName[es]": "Implementación de ejecución de navegador",
-    "GenericName[et]": "Brauseri käivitamise toetus",
-    "GenericName[fi]": "Selaimenkäynnistystuki",
-    "GenericName[fr]": "Prise en charge de l'exécution du navigateur",
-    "GenericName[gl]": "Funcionalidade de execución dun navegador",
-    "GenericName[hu]": "Böngésző végrehajtás támogatás",
-    "GenericName[it]": "Supporto esecuzione del browser",
-    "GenericName[nl]": "Ondersteuning voor uitvoeren van de browser",
-    "GenericName[pl]": "Obsługa uruchamiania przeglądarki",
-    "GenericName[pt]": "Suporte para a Execução de Navegadores",
-    "GenericName[pt_BR]": "Suporte para a execução de navegadores",
-    "GenericName[sk]": "Podpora spustenia prehliadača",
-    "GenericName[sv]": "Stöd för körning av webbläsare",
-    "GenericName[tr]": "Tarayıcı Çalıştırma Desteği",
-    "GenericName[uk]": "Підтримка запуску інструментів перегляду",
-    "GenericName[x-test]": "xxBrowser Execution Supportxx",
     "KPlugin": {
         "Authors": [
             {
