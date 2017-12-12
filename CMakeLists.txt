@@ -11,7 +11,11 @@ include(KDECMakeSettings)
 include(ECMQtDeclareLoggingCategory)
 include(FeatureSummary)
 
-find_package(KF5 REQUIRED I18n ItemModels ConfigWidgets)
+set(KF5_DEP_VERSION "5.15.0")
+find_package(KF5 ${KF5_DEP_VERSION} REQUIRED COMPONENTS
+    I18n
+    ItemModels # needed because missing in KDevPlatformConfig.cmake, remove once dep on kdevplatform >=5.2.2
+)
 
 set(KDEVPLATFORM_VERSION "5.1.0")
 find_package(KDevPlatform ${KDEVPLATFORM_VERSION} CONFIG)
