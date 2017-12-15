@@ -16,6 +16,7 @@
         "Description[pl]": "Wtyczka do uruchamiania przeglądarki.",
         "Description[pt]": "Este 'plugin' permite executar um navegador.",
         "Description[sk]": "Tento plugin umožní spustiť prehliadač.",
+        "Description[sv]": "Insticksprogrammet gör det möjligt att köra en webbläsare.",
         "Description[uk]": "За допомогою цього додатка можна запустити програму для перегляду інтернету.",
         "Description[x-test]": "xxThis plugin allows running browser.xx",
         "Icon": "internet-web-browser",
@@ -31,6 +32,7 @@
         "Name[pl]": "Uruchom przeglądarkę",
         "Name[pt]": "Executar um Navegador",
         "Name[sk]": "Spustiť prehliadač",
+        "Name[sv]": "Kör webbläsare",
         "Name[uk]": "Запустити навігатор",
         "Name[x-test]": "xxExecute Browserxx",
         "ServiceTypes": [
