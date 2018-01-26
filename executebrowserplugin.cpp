@@ -77,17 +77,21 @@ QUrl ExecuteBrowserPlugin::url( KDevelop::ILaunchConfiguration* cfg, QString& er
     QString host = grp.readEntry( ExecuteBrowserPlugin::serverEntry, "" );
     if( host.isEmpty() )
     {
-        err_ = i18n("No valid server specified");
-        qCWarning(KDEV_EXECUTEBROWSER) << "Launch Configuration:" << cfg->name() << "no valid server specified";
+        err_ = i18n("Empty server in launch configuration");
+        qCWarning(KDEV_EXECUTEBROWSER) << "Launch Configuration:" << cfg->name() << err_;
         return url;
     }
-    url.setScheme("http");
-    url.setHost(host);
-    auto path = grp.readEntry( ExecuteBrowserPlugin::pathEntry, "" );
-    if ( !path.startsWith("/") ) {
+
+    QString path(grp.readEntry( ExecuteBrowserPlugin::pathEntry, "" ));
+    if( !host.endsWith("/") && !path.isEmpty() && !path.startsWith("/") ) {
         path.prepend("/");
     }
-    url.setPath(path);
+    if( !host.contains(QStringLiteral("://")) )
+    {
+        host.prepend(QStringLiteral("http://"));
+    }
+
+    url.setUrl(host + path);
     url.setPort(grp.readEntry( ExecuteBrowserPlugin::portEntry, 80 ));
     {
         QString q = grp.readEntry( ExecuteBrowserPlugin::argumentsEntry, "" );
@@ -95,6 +99,13 @@ QUrl ExecuteBrowserPlugin::url( KDevelop::ILaunchConfiguration* cfg, QString& er
             url.setQuery(q);
         }
     }
+
+    if( url.toString().isEmpty() ) {
+        err_ = i18n("Invalid launch configuration");
+        qCWarning(KDEV_EXECUTEBROWSER) << "Launch Configuration:" << cfg->name() << err_;
+        return url;
+    }
+    qCDebug(KDEV_EXECUTEBROWSER) << "Url:" << url.toString();
     return url;
 }
 
