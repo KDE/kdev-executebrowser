@@ -29,9 +29,6 @@
         <property name="text">
          <string>localhost</string>
         </property>
-        <property name="maxLength">
-         <number>25</number>
-        </property>
         <property name="clearButtonEnabled">
          <bool>true</bool>
         </property>
