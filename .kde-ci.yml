@@ -4,4 +4,8 @@
 Dependencies:
 - 'on': ['@all']
   'require':
-    'kdevelop/kdevelop': '@same'
+    'frameworks/extra-cmake-modules': '@stable'
+    'frameworks/ki18n': '@stable'
+    'frameworks/ktexteditor': '@stable'
+    'frameworks/kitemmodels': '@stable'
+    'kdevelop/kdevelop': '@stable'
