@@ -1,0 +1,139 @@
+# Translation of kdevexecutebrowser.po to Ukrainian
+# Copyright (C) 2009-2018 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2009, 2010, 2016, 2017, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdevexecutebrowser\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:19+0200\n"
+"PO-Revision-Date: 2018-01-31 08:41+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: browserappconfig.cpp:81
+#, kde-format
+msgid "Configure Browser Application"
+msgstr "Налаштування програми перегляду"
+
+#: browserappconfig.cpp:113 browserappconfig.cpp:157
+#, kde-format
+msgid "Browser Application"
+msgstr "Програма перегляду"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: browserappconfig.ui:17
+#, kde-format
+msgid "URL"
+msgstr "Адреса"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: browserappconfig.ui:23
+#, kde-format
+msgid "Server:"
+msgstr "Сервер:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, server)
+#: browserappconfig.ui:30
+#, kde-format
+msgid "localhost"
+msgstr "localhost"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: browserappconfig.ui:40
+#, kde-format
+msgid "Path:"
+msgstr "Шлях:"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, path)
+#: browserappconfig.ui:47
+#, kde-format
+msgid "Enter the path"
+msgstr "Введіть шлях"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: browserappconfig.ui:54
+#, kde-format
+msgid "Ar&guments:"
+msgstr "&Параметри:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, arguments)
+#: browserappconfig.ui:64
+#, kde-format
+msgid "Enter arguments to give to the executable"
+msgstr "Введіть параметри, які буде передано виконуваному файлу"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, arguments)
+#: browserappconfig.ui:67
+#, kde-format
+msgid "Enter arguments to give to the URL"
+msgstr "Введіть параметри, які слід передати адресі"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: browserappconfig.ui:74
+#, kde-format
+msgid "Browser:"
+msgstr "Переглядач:"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, browser)
+#: browserappconfig.ui:83
+#, kde-format
+msgid "Leave empty to use system default"
+msgstr "Не заповнюйте, якщо слід використовувати системний"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, selectBrowserButton)
+#: browserappconfig.ui:96
+#, kde-format
+msgid "Select a browser"
+msgstr "Вибрати програму для перегляду інтернету"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: browserappconfig.ui:105
+#, kde-format
+msgid "Port:"
+msgstr "Порт:"
+
+#: executebrowserplugin.cpp:80
+#, kde-format
+msgid "Empty server in launch configuration"
+msgstr "Порожнє поле сервера у налаштуваннях запуску"
+
+#: executebrowserplugin.cpp:104
+#, kde-format
+msgid "Invalid launch configuration"
+msgstr "Некоректні налаштування запуску"
+
+#~ msgid "No valid server specified"
+#~ msgstr "Не вказано коректного сервера"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Юрій Чорноіван"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "yurchor@ukr.net"
+
+#~ msgid "Execute browser support"
+#~ msgstr "Підтримка запуску програми перегляду"
+
+#~ msgid "Allows running of browsers"
+#~ msgstr "Надає змогу запускати переглядачі"
+
+#~ msgid "Niko Sams"
+#~ msgstr "Niko Sams"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Url"
+#~ msgstr "URL"

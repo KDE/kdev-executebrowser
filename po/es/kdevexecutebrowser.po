@@ -1,0 +1,133 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Eloy Cuadra <ecuadra@eloihr.net>, 2009, 2010, 2016, 2017, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:19+0200\n"
+"PO-Revision-Date: 2018-01-31 22:01+0100\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: browserappconfig.cpp:81
+#, kde-format
+msgid "Configure Browser Application"
+msgstr "Configurar la aplicación de navegación"
+
+#: browserappconfig.cpp:113 browserappconfig.cpp:157
+#, kde-format
+msgid "Browser Application"
+msgstr "Aplicación de navegación"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: browserappconfig.ui:17
+#, kde-format
+msgid "URL"
+msgstr "URL"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: browserappconfig.ui:23
+#, kde-format
+msgid "Server:"
+msgstr "Servidor:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, server)
+#: browserappconfig.ui:30
+#, kde-format
+msgid "localhost"
+msgstr "localhost"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: browserappconfig.ui:40
+#, kde-format
+msgid "Path:"
+msgstr "Ruta:"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, path)
+#: browserappconfig.ui:47
+#, kde-format
+msgid "Enter the path"
+msgstr "Introduzca la ruta"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: browserappconfig.ui:54
+#, kde-format
+msgid "Ar&guments:"
+msgstr "Ar&gumentos:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, arguments)
+#: browserappconfig.ui:64
+#, kde-format
+msgid "Enter arguments to give to the executable"
+msgstr "Introduzca los argumentos a proporcionar al ejecutable"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, arguments)
+#: browserappconfig.ui:67
+#, kde-format
+msgid "Enter arguments to give to the URL"
+msgstr "Introduzca los argumentos a proporcionar a la URL"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: browserappconfig.ui:74
+#, kde-format
+msgid "Browser:"
+msgstr "Navegador:"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, browser)
+#: browserappconfig.ui:83
+#, kde-format
+msgid "Leave empty to use system default"
+msgstr "Dejar en blanco para usar el predeterminado del sistema"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, selectBrowserButton)
+#: browserappconfig.ui:96
+#, kde-format
+msgid "Select a browser"
+msgstr "Seleccione un navegador"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: browserappconfig.ui:105
+#, kde-format
+msgid "Port:"
+msgstr "Puerto:"
+
+#: executebrowserplugin.cpp:80
+#, kde-format
+msgid "Empty server in launch configuration"
+msgstr "Servidor en blanco en la configuración de lanzamiento"
+
+#: executebrowserplugin.cpp:104
+#, kde-format
+msgid "Invalid launch configuration"
+msgstr "Configuración de lanzamiento no válida"
+
+#~ msgid "No valid server specified"
+#~ msgstr "No se ha especificado un servidor válido"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Eloy Cuadra"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "ecuadra@eloihr.net"
+
+#~ msgid "Execute browser support"
+#~ msgstr "Implementación de la ejecución del navegador"
+
+#~ msgid "Allows running of browsers"
+#~ msgstr "Permite ejecutar navegadores"
+
+#~ msgid "Niko Sams"
+#~ msgstr "Niko Sams"
+
+#~ msgid "Author"
+#~ msgstr "Autor"

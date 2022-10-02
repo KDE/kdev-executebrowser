@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdevexecutebrowser\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:19+0200\n"
+"PO-Revision-Date: 2018-01-31 10:46+0000\n"
+"Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
+"Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-POFile-SpellExtra: localhost Sams Niko\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: browserappconfig.cpp:81
+#, kde-format
+msgid "Configure Browser Application"
+msgstr "Configuração a Aplicação de Navegação"
+
+#: browserappconfig.cpp:113 browserappconfig.cpp:157
+#, kde-format
+msgid "Browser Application"
+msgstr "Aplicação de Navegação"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: browserappconfig.ui:17
+#, kde-format
+msgid "URL"
+msgstr "URL"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: browserappconfig.ui:23
+#, kde-format
+msgid "Server:"
+msgstr "Servidor:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, server)
+#: browserappconfig.ui:30
+#, kde-format
+msgid "localhost"
+msgstr "localhost"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: browserappconfig.ui:40
+#, kde-format
+msgid "Path:"
+msgstr "Localização:"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, path)
+#: browserappconfig.ui:47
+#, kde-format
+msgid "Enter the path"
+msgstr "Indicar a localização"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: browserappconfig.ui:54
+#, kde-format
+msgid "Ar&guments:"
+msgstr "Ar&gumentos:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, arguments)
+#: browserappconfig.ui:64
+#, kde-format
+msgid "Enter arguments to give to the executable"
+msgstr "Indique os argumentos a passar ao executável"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, arguments)
+#: browserappconfig.ui:67
+#, kde-format
+msgid "Enter arguments to give to the URL"
+msgstr "Indique os argumentos a passar ao URL"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: browserappconfig.ui:74
+#, kde-format
+msgid "Browser:"
+msgstr "Navegador:"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, browser)
+#: browserappconfig.ui:83
+#, kde-format
+msgid "Leave empty to use system default"
+msgstr "Deixe em branco para usar o predefinido do sistema"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, selectBrowserButton)
+#: browserappconfig.ui:96
+#, kde-format
+msgid "Select a browser"
+msgstr "Seleccionar um navegador"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: browserappconfig.ui:105
+#, kde-format
+msgid "Port:"
+msgstr "Porto:"
+
+#: executebrowserplugin.cpp:80
+#, kde-format
+msgid "Empty server in launch configuration"
+msgstr "Servidor vazio na configuração do lançamento"
+
+#: executebrowserplugin.cpp:104
+#, kde-format
+msgid "Invalid launch configuration"
+msgstr "Configuração de lançamento inválida"

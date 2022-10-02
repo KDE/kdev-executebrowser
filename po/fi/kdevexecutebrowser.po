@@ -1,0 +1,134 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Tommi Nieminen <translator@legisign.org>, 2015, 2018.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 03:19+0200\n"
+"PO-Revision-Date: 2018-08-04 21:30+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: browserappconfig.cpp:81
+#, kde-format
+msgid "Configure Browser Application"
+msgstr "Selainsovelluksen asetukset"
+
+#: browserappconfig.cpp:113 browserappconfig.cpp:157
+#, kde-format
+msgid "Browser Application"
+msgstr "Selainsovellus"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: browserappconfig.ui:17
+#, kde-format
+msgid "URL"
+msgstr "Verkko-osoite"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: browserappconfig.ui:23
+#, kde-format
+msgid "Server:"
+msgstr "Palvelin:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, server)
+#: browserappconfig.ui:30
+#, kde-format
+msgid "localhost"
+msgstr "localhost"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: browserappconfig.ui:40
+#, kde-format
+msgid "Path:"
+msgstr "Sijainti:"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, path)
+#: browserappconfig.ui:47
+#, kde-format
+msgid "Enter the path"
+msgstr "Anna sijainti"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: browserappconfig.ui:54
+#, kde-format
+msgid "Ar&guments:"
+msgstr "&Parametrit:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, arguments)
+#: browserappconfig.ui:64
+#, kde-format
+msgid "Enter arguments to give to the executable"
+msgstr "Kirjoita suoritettavalle tiedostolle annettavat argumentit"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, arguments)
+#: browserappconfig.ui:67
+#, kde-format
+msgid "Enter arguments to give to the URL"
+msgstr "Anna verkko-osoitteelle lähetettävät argumentit"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: browserappconfig.ui:74
+#, kde-format
+msgid "Browser:"
+msgstr "Selain:"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, browser)
+#: browserappconfig.ui:83
+#, kde-format
+msgid "Leave empty to use system default"
+msgstr "Käytä oletusta jättämällä tyhjäksi"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, selectBrowserButton)
+#: browserappconfig.ui:96
+#, kde-format
+msgid "Select a browser"
+msgstr "Valitse selain"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: browserappconfig.ui:105
+#, kde-format
+msgid "Port:"
+msgstr "Portti:"
+
+#: executebrowserplugin.cpp:80
+#, kde-format
+msgid "Empty server in launch configuration"
+msgstr "Tyhjä palvelin käynnistysasetuksissa"
+
+#: executebrowserplugin.cpp:104
+#, kde-format
+msgid "Invalid launch configuration"
+msgstr "Virheellinen käynnistysmääritys"
+
+#~ msgid "No valid server specified"
+#~ msgstr "Kelvollista palvelinta ei määritetty"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Tommi Nieminen"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "translator@legisign.org"
+
+#~ msgid "Execute browser support"
+#~ msgstr "Käynnistä selaintuki"
+
+#~ msgid "Allows running of browsers"
+#~ msgstr "Mahdollistaa selainten käynnistämisen"
+
+#~ msgid "Niko Sams"
+#~ msgstr "Niko Sams"
+
+#~ msgid "Author"
+#~ msgstr "Tekijä"
