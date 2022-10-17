@@ -77,7 +77,7 @@ msgstr "Introduïu els arguments que es proporcionaran a l'executable"
 #: browserappconfig.ui:67
 #, kde-format
 msgid "Enter arguments to give to the URL"
-msgstr "Introduïu els arguments que es proporcionaran a l'URL"
+msgstr "Introduïu els arguments que s'han de proporcionar a l'URL"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: browserappconfig.ui:74
