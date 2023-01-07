@@ -1,13 +1,16 @@
 # Translation of kdevexecutebrowser into esperanto.
+# mesaĝoj por "kdev-executebrowser"
+# Copyright (C) 2009 Free Software Foundation, Inc.
 # Axel Rousseau <axel@esperanto-jeunes.org>, 2009.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kdevexecutebrowser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2019-05-20 03:19+0200\n"
-"PO-Revision-Date: 2009-11-15 12:06+0100\n"
-"Last-Translator: Axel Rousseau <axel@esperanto-jeunes.org>\n"
+"PO-Revision-Date: 2023-01-06 12:00+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +27,7 @@ msgstr ""
 #: browserappconfig.cpp:113 browserappconfig.cpp:157
 #, kde-format
 msgid "Browser Application"
-msgstr ""
+msgstr "Retumila Aplikaĵo"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: browserappconfig.ui:17
@@ -54,7 +57,7 @@ msgstr "Pado:"
 #: browserappconfig.ui:47
 #, kde-format
 msgid "Enter the path"
-msgstr ""
+msgstr "Enigu la padon"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: browserappconfig.ui:54
@@ -67,55 +70,44 @@ msgstr "Argumentoj:"
 #: browserappconfig.ui:64
 #, kde-format
 msgid "Enter arguments to give to the executable"
-msgstr ""
+msgstr "Enigu argumentojn donendajn al la programo"
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, arguments)
 #: browserappconfig.ui:67
 #, kde-format
 msgid "Enter arguments to give to the URL"
-msgstr ""
+msgstr "Enigu argumentojn donendajn al la URL"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: browserappconfig.ui:74
 #, kde-format
 msgid "Browser:"
-msgstr ""
+msgstr "Retumilo:"
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, browser)
 #: browserappconfig.ui:83
 #, kde-format
 msgid "Leave empty to use system default"
-msgstr ""
+msgstr "Lasu malplena por uzi sistemdefaŭlton"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, selectBrowserButton)
 #: browserappconfig.ui:96
 #, kde-format
 msgid "Select a browser"
-msgstr ""
+msgstr "Elekti Retumilon"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: browserappconfig.ui:105
 #, kde-format
 msgid "Port:"
-msgstr ""
+msgstr "Pordo:"
 
 #: executebrowserplugin.cpp:80
 #, kde-format
 msgid "Empty server in launch configuration"
-msgstr ""
+msgstr "Malplena servilo en lanĉagordo"
 
 #: executebrowserplugin.cpp:104
 #, kde-format
 msgid "Invalid launch configuration"
-msgstr ""
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Axel Rousseau"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "axel@esperanto-jeunes.org"
-
-#~ msgid "Author"
-#~ msgstr "Aŭtoro"
+msgstr "Nevalida lanĉagordo"
