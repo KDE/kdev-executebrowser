@@ -20,12 +20,12 @@ msgstr ""
 #: browserappconfig.cpp:81
 #, kde-format
 msgid "Configure Browser Application"
-msgstr "브라우저 프로그램 설정"
+msgstr "브라우저 앱 설정"
 
 #: browserappconfig.cpp:113 browserappconfig.cpp:157
 #, kde-format
 msgid "Browser Application"
-msgstr "브라우저 프로그램"
+msgstr "브라우저 앱"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: browserappconfig.ui:17
