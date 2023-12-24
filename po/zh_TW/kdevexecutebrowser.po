@@ -1,110 +1,110 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the kdev-executebrowser package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# SPDX-FileCopyrightText: 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdev-executebrowser\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:27+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2023-12-24 05:05+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: browserappconfig.cpp:81
 #, kde-format
 msgid "Configure Browser Application"
-msgstr ""
+msgstr "設定瀏覽器應用程式"
 
 #: browserappconfig.cpp:113 browserappconfig.cpp:157
 #, kde-format
 msgid "Browser Application"
-msgstr ""
+msgstr "瀏覽器應用程式"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: browserappconfig.ui:17
 #, kde-format
 msgid "URL"
-msgstr ""
+msgstr "網址"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: browserappconfig.ui:23
 #, kde-format
 msgid "Server:"
-msgstr ""
+msgstr "伺服器："
 
 #. i18n: ectx: property (text), widget (KLineEdit, server)
 #: browserappconfig.ui:30
 #, kde-format
 msgid "localhost"
-msgstr ""
+msgstr "localhost"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: browserappconfig.ui:40
 #, kde-format
 msgid "Path:"
-msgstr ""
+msgstr "路徑："
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, path)
 #: browserappconfig.ui:47
 #, kde-format
 msgid "Enter the path"
-msgstr ""
+msgstr "輸入路徑"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: browserappconfig.ui:54
 #, kde-format
 msgid "Ar&guments:"
-msgstr ""
+msgstr "參數(&G)："
 
 #. i18n: ectx: property (toolTip), widget (KLineEdit, arguments)
 #: browserappconfig.ui:64
 #, kde-format
 msgid "Enter arguments to give to the executable"
-msgstr ""
+msgstr "輸入要遞給執行檔的參數"
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, arguments)
 #: browserappconfig.ui:67
 #, kde-format
 msgid "Enter arguments to give to the URL"
-msgstr ""
+msgstr "輸入要遞給網址的參數"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: browserappconfig.ui:74
 #, kde-format
 msgid "Browser:"
-msgstr ""
+msgstr "瀏覽器："
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, browser)
 #: browserappconfig.ui:83
 #, kde-format
 msgid "Leave empty to use system default"
-msgstr ""
+msgstr "留空來使用系統預設"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, selectBrowserButton)
 #: browserappconfig.ui:96
 #, kde-format
 msgid "Select a browser"
-msgstr ""
+msgstr "選擇瀏覽器"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: browserappconfig.ui:105
 #, kde-format
 msgid "Port:"
-msgstr ""
+msgstr "連接埠："
 
 #: executebrowserplugin.cpp:80
 #, kde-format
 msgid "Empty server in launch configuration"
-msgstr ""
+msgstr "啟動設定中伺服器是空白的"
 
 #: executebrowserplugin.cpp:104
 #, kde-format
 msgid "Invalid launch configuration"
-msgstr ""
+msgstr "無效的啟動設定"
