@@ -9,3 +9,6 @@ Dependencies:
     'frameworks/ktexteditor': '@stable'
     'frameworks/kitemmodels': '@stable'
     'kdevelop/kdevelop': '@stable'
+
+Options:
+  require-passing-tests-on: ['Linux', 'FreeBSD', 'Windows']
