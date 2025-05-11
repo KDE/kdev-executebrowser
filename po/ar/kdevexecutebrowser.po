@@ -1,0 +1,111 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the kdev-executebrowser package.
+# SPDX-FileCopyrightText: 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdev-executebrowser\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-11-05 12:27+0000\n"
+"PO-Revision-Date: 2025-05-10 17:42+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#: browserappconfig.cpp:81
+#, kde-format
+msgid "Configure Browser Application"
+msgstr "اضبط تطبيق المتصفح"
+
+#: browserappconfig.cpp:113 browserappconfig.cpp:157
+#, kde-format
+msgid "Browser Application"
+msgstr "تطبيق المتصفح"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: browserappconfig.ui:17
+#, kde-format
+msgid "URL"
+msgstr "الرابط"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: browserappconfig.ui:23
+#, kde-format
+msgid "Server:"
+msgstr "الخادم:"
+
+#. i18n: ectx: property (text), widget (KLineEdit, server)
+#: browserappconfig.ui:30
+#, kde-format
+msgid "localhost"
+msgstr "المضيف المحلي"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: browserappconfig.ui:40
+#, kde-format
+msgid "Path:"
+msgstr "المسار:"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, path)
+#: browserappconfig.ui:47
+#, kde-format
+msgid "Enter the path"
+msgstr "أدخل أو حدد المسار"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: browserappconfig.ui:54
+#, kde-format
+msgid "Ar&guments:"
+msgstr "ال&معاملات:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, arguments)
+#: browserappconfig.ui:64
+#, kde-format
+msgid "Enter arguments to give to the executable"
+msgstr "أدخل المعاملات التي تريد إعطاؤها للملف القابل للتنفيذ"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, arguments)
+#: browserappconfig.ui:67
+#, kde-format
+msgid "Enter arguments to give to the URL"
+msgstr "أدخل المعاملات التي تريد تقديمها إلى الرابط"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: browserappconfig.ui:74
+#, kde-format
+msgid "Browser:"
+msgstr "المتصفّح:"
+
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, browser)
+#: browserappconfig.ui:83
+#, kde-format
+msgid "Leave empty to use system default"
+msgstr "اتركه فارغًا لاستخدام مبدئيات النظام"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, selectBrowserButton)
+#: browserappconfig.ui:96
+#, kde-format
+msgid "Select a browser"
+msgstr "حدد متصفح"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: browserappconfig.ui:105
+#, kde-format
+msgid "Port:"
+msgstr "المنفذ:"
+
+#: executebrowserplugin.cpp:80
+#, kde-format
+msgid "Empty server in launch configuration"
+msgstr "خادم فارغ في ضبط الإطلاق"
+
+#: executebrowserplugin.cpp:104
+#, kde-format
+msgid "Invalid launch configuration"
+msgstr "ضبط إطلاق غير صحيح"
