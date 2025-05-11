@@ -3,6 +3,7 @@
         "Authors": [
             {
                 "Name": "Niko Sams",
+                "Name[ar]": "نيكو سامز",
                 "Name[az]": "Niko Sams",
                 "Name[ca@valencia]": "Niko Sams",
                 "Name[ca]": "Niko Sams",
@@ -39,6 +40,7 @@
             }
         ],
         "Description": "This plugin allows running browser.",
+        "Description[ar]": "هذه المحلقة تسمح بتشغيل متصفح.",
         "Description[az]": "Bu əlavə bələdçini işə salmağa imkan verir.",
         "Description[ca@valencia]": "Este connector permet executar el navegador.",
         "Description[ca]": "Aquest connector permet executar el navegador.",
@@ -74,6 +76,7 @@
         "Id": "kdevexecutebrowser",
         "License": "GPL",
         "Name": "Execute Browser",
+        "Name[ar]": "شغّل متصفح",
         "Name[az]": "Bələdçini işə salın",
         "Name[ca@valencia]": "Executa el navegador",
         "Name[ca]": "Executa el navegador",
