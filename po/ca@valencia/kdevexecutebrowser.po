@@ -96,7 +96,7 @@ msgstr "Deixeu-ho en blanc per a utilitzar el predeterminat del sistema"
 #: browserappconfig.ui:96
 #, kde-format
 msgid "Select a browser"
-msgstr "Selecciona un navegador"
+msgstr "Tria un navegador"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: browserappconfig.ui:105
