@@ -34,7 +34,6 @@
                 "Name[sv]": "Niko Sams",
                 "Name[tr]": "Niko Sams",
                 "Name[uk]": "Niko Sams",
-                "Name[x-test]": "xxNiko Samsxx",
                 "Name[zh_CN]": "Niko Sams",
                 "Name[zh_TW]": "Niko Sams"
             }
@@ -70,7 +69,6 @@
         "Description[sv]": "Insticksprogrammet gör det möjligt att köra en webbläsare.",
         "Description[tr]": "Bu eklenti, tarayıcı çalıştırmaya izin verir.",
         "Description[uk]": "За допомогою цього додатка можна запустити програму для перегляду інтернету.",
-        "Description[x-test]": "xxThis plugin allows running browser.xx",
         "Description[zh_TW]": "此外掛程式允許執行瀏覽器。",
         "Icon": "internet-web-browser",
         "Id": "kdevexecutebrowser",
@@ -106,7 +104,6 @@
         "Name[sv]": "Kör webbläsare",
         "Name[tr]": "Tarayıcı Çalıştır",
         "Name[uk]": "Запустити навігатор",
-        "Name[x-test]": "xxExecute Browserxx",
         "Name[zh_TW]": "執行瀏覽器",
         "ServiceTypes": [
             "KDevelop/Plugin"
