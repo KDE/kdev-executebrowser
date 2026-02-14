@@ -2,13 +2,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Alexander Potashev <aspotashev@gmail.com>, 2017.
+# SPDX-FileCopyrightText: 2026 Alexander Yavorskiy <kekcuha@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 09:00+0000\n"
-"PO-Revision-Date: 2017-11-28 15:58+0300\n"
-"Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
+"PO-Revision-Date: 2026-02-13 13:29+0200\n"
+"Last-Translator: Alexander Yavorskiy <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -16,65 +17,65 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 25.12.2\n"
 
 #: browserappconfig.cpp:81
 #, kde-format
 msgid "Configure Browser Application"
-msgstr ""
+msgstr "Настройка браузера"
 
 #: browserappconfig.cpp:113 browserappconfig.cpp:157
 #, kde-format
 msgid "Browser Application"
-msgstr ""
+msgstr "Приложение браузера"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: browserappconfig.ui:17
 #, kde-format
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: browserappconfig.ui:23
 #, kde-format
 msgid "Server:"
-msgstr ""
+msgstr "Сервер:"
 
 #. i18n: ectx: property (text), widget (KLineEdit, server)
 #: browserappconfig.ui:30
 #, kde-format
 msgid "localhost"
-msgstr ""
+msgstr "localhost"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: browserappconfig.ui:40
 #, kde-format
 msgid "Path:"
-msgstr ""
+msgstr "Путь:"
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, path)
 #: browserappconfig.ui:47
 #, kde-format
 msgid "Enter the path"
-msgstr ""
+msgstr "Введите путь"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: browserappconfig.ui:54
 #, kde-format
 msgid "Ar&guments:"
-msgstr ""
+msgstr "&Аргументы:"
 
 #. i18n: ectx: property (toolTip), widget (KLineEdit, arguments)
 #: browserappconfig.ui:64
 #, kde-format
 msgid "Enter arguments to give to the executable"
-msgstr ""
+msgstr "Введите аргументы для передачи исполняемому файлу"
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, arguments)
 #: browserappconfig.ui:67
 #, kde-format
 msgid "Enter arguments to give to the URL"
-msgstr ""
+msgstr "Введите аргументы для передачи URL"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: browserappconfig.ui:74
@@ -86,26 +87,26 @@ msgstr "Веб-браузер:"
 #: browserappconfig.ui:83
 #, kde-format
 msgid "Leave empty to use system default"
-msgstr ""
+msgstr "Оставьте пустым чтобы использовать системные параметры по умолчанию"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, selectBrowserButton)
 #: browserappconfig.ui:96
 #, kde-format
 msgid "Select a browser"
-msgstr ""
+msgstr "Выбор браузера"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: browserappconfig.ui:105
 #, kde-format
 msgid "Port:"
-msgstr ""
+msgstr "Порт:"
 
 #: executebrowserplugin.cpp:80
 #, kde-format
 msgid "Empty server in launch configuration"
-msgstr ""
+msgstr "Пустой сервер в конфигурации запуска"
 
 #: executebrowserplugin.cpp:104
 #, kde-format
 msgid "Invalid launch configuration"
-msgstr ""
+msgstr "Неверная конфигурация запуска"
